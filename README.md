@@ -2,7 +2,7 @@
 
 ## 任务概述
 
-请在 `dqn/agent.py` 中实现 DQN 算法的关键部分，**主要是 `update()` 方法**。完成后，你可以运行训练脚本 `train.py` 来训练模型，并使用 `evaluate.py` 评估训练结果。
+请在 `alg/agent.py` 中实现 DQN 算法的关键部分，**主要是 `update()` 方法**。完成后，你可以运行训练脚本 `train.py` 来训练模型，并使用 `evaluate.py` 评估训练结果。
 
 ## 获取作业仓库
 
@@ -10,7 +10,7 @@
 
 2. **在本地执行：**
 ```bash
-git clone https://github.com/chendy498/dqn.git
+git clone https://github.com/sysu-qhxx/DQN-Assignment.git
 git checkout -b dev
 ```
 
@@ -41,23 +41,22 @@ conda create -n dqn python=3.11 -y
 conda activate dqn
 ```
 
-3. **（可选）如果你想使用 GPU，请根据你的 CUDA 版本安装对应的 PyTorch。**
-   建议访问 [https://pytorch.org](https://pytorch.org) 获取官方安装命令。若不确定或使用 CPU，下面的 pip 安装命令也可以。
 
-4. **进入项目目录（假设你已把仓库 clone 到本地）**
+3. **进入项目目录（假设你已把仓库 clone 到本地）**
 
 ```bash
-cd dqn
+cd DQN-Assignment
 ```
 
-5. **安装依赖**
+4. **安装依赖**
 
 使用 `requirements.txt`：
 
 ```bash
 pip install -r requirements.txt
 ```
-
+5. **（可选）如果你想使用 GPU，请根据你的 CUDA 版本安装对应的 PyTorch。**
+   建议访问 [https://pytorch.org](https://pytorch.org) 获取官方安装命令。若不确定或使用 CPU，下面的 pip 安装命令也可以。
 如果你更愿意用 conda 安装 PyTorch（推荐 GPU 用户），可以先用 conda 安装 pytorch，再 `pip install` 其余依赖：
 
 ```bash
@@ -71,7 +70,7 @@ pip install -r requirements.txt
 ## 文件与目录说明
 
 ```
-dqn/
+DQN-Assignment/
 │
 ├── alg/
 │   ├── network.py        # Q 网络结构
@@ -152,4 +151,5 @@ python evaluate.py
    * `dqn/agent.py` 完整实现
    * 可选：`train.log` 或训练曲线截图
    * 提交信息中写明你实现了哪些部分
+
 
